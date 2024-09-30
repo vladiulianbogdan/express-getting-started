@@ -3,6 +3,9 @@ import Serverless from "serverless-http";
 
 const app = express();
 
+console.log(process.env.DB_USERNAME)
+console.log(process.env.DB_PASSWORD)
+
 app.get("/", (req, res) => {
   res.send("Hello World from Express serverless!");
 });
